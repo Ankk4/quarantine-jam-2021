@@ -15,19 +15,10 @@ public class PlayerCamera : MonoBehaviour
         offset = new Vector3(0, yOffset, zOffset);
     }
 
-    void LateUpdate ()
+    private void LateUpdate ()
     {
         transform.position = targets[currentTarget].transform.position + offset;
     }
 
-    public void SetPlayerTarget()
-    {
-        currentTarget = 0;
-    }
-
-    public void SetGhostTarget()
-    {
-        currentTarget = 1;
-    }
 }
 
