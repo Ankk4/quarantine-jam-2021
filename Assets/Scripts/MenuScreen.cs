@@ -16,6 +16,5 @@ public class MenuScreen : MonoBehaviour
 
     public void Handle()
     {
-    	Debug.Log("MenuScreen");
     }
 }

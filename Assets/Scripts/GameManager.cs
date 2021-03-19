@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField]
+	public TextMeshProUGUI debugText;
+
     public enum GameState
     {
         menu,
@@ -17,6 +21,7 @@ public class GameManager : MonoBehaviour
     public GameState CurrentGameState
     {
         get { return currentGameState; }
+        set { currentGameState = value; }
     }
 
     [SerializeField]
@@ -34,6 +39,8 @@ public class GameManager : MonoBehaviour
 
     void FixedUpdate()
     {
+    	debugText.text = "GameState: " + currentGameState;
+    	
         switch (currentGameState)
         {
             case GameState.menu:
