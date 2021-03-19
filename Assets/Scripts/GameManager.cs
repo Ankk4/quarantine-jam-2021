@@ -2,59 +2,63 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField]
 	public TextMeshProUGUI debugText;
+	[SerializeField]
+	public Button debugButton;
 
-    public enum GameState
-    {
-        menu,
-        house,
-        drugs,
-        run
-    }
+	public Dictionary<int, string> GameStates;
 
     public double timePassed;
-    private GameState currentGameState;
-    public GameState CurrentGameState
+
+    private int currentGameState;
+    public int CurrentGameState
     {
         get { return currentGameState; }
         set { currentGameState = value; }
     }
 
-    [SerializeField]
-    public GameObject menuScreen; 
-    [SerializeField]
-    public GameObject houseScreen; 
-    [SerializeField]
-    public GameObject drugsScreen; 
-    [SerializeField]
-    public GameObject runScreen; 
+    void Awake()
+    {
+    	DontDestroyOnLoad(this.gameObject);
+    }
 
     void Start()
-    {
+    {	
+    	GameStates = new Dictionary<int, string>(){
+    		{0, "Start"},
+    		{1, "House"},
+    		{2, "Drugs"},
+    		{3, "RunScene"}
+    	};
+    	debugButton.onClick.AddListener(SwitchScene);
+    	CurrentGameState = 0;
     }
 
     void FixedUpdate()
     {
     	debugText.text = "GameState: " + currentGameState;
-    	
-        switch (currentGameState)
-        {
-            case GameState.menu:
-                menuScreen.GetComponent<MenuScreen>().Handle();
-                break;
-            case GameState.house:
-                houseScreen.GetComponent<HouseScreen>().Handle();
-                break;
-            case GameState.drugs:
-                drugsScreen.GetComponent<DrugsScreen>().Handle();
-                break;
-            case GameState.run:
-            	runScreen.GetComponent<RunScreen>().Handle();
-                break;
-        }
+    }
+
+    void SwitchScene()
+    {
+    	Debug.Log("Current: " + currentGameState);
+    	currentGameState++;
+
+    	if (currentGameState > GameStates.Count - 1)
+    	{
+    		currentGameState = 1;
+    	}
+
+    	if (SceneManager.GetActiveScene().name == GameStates[currentGameState])
+    	{
+    		return;
+    	}
+    	SceneManager.LoadScene(GameStates[currentGameState]);
     }
 }
