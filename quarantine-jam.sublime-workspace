@@ -1,0 +1,266 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"menu",
+				"View: Toggle Menu"
+			],
+			[
+				"ansible",
+				"Snippet: ansible"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"packageRe",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"omni",
+				"OmniMarkupPreviewer: Preview Current Markup in Browser"
+			],
+			[
+				"markdown",
+				"Set Syntax: Markdown"
+			],
+			[
+				"instll",
+				"Package Control: Install Package"
+			],
+			[
+				"tehe",
+				"UI: Select Theme"
+			],
+			[
+				"destr",
+				"Origami: Destroy Current Pane"
+			],
+			[
+				"destroy",
+				"Origami: Destroy Current Pane"
+			],
+			[
+				"origamin",
+				"Origami: Create Pane Below"
+			],
+			[
+				"origami: des",
+				"Origami: Destroy Current Pane"
+			],
+			[
+				"set syntax javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"minima",
+				"View: Toggle Minimap"
+			],
+			[
+				"set syntax wi",
+				"Set Syntax: i3-wm Config"
+			],
+			[
+				"install ",
+				"Install Package Control"
+			],
+			[
+				"package",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/ankk4/repo/quarantine-jam-2021"
+	],
+	"file_history":
+	[
+		"/home/ankk4/gamejam-03-2021/Assets/Scripts/Input.cs",
+		"/home/ankk4/repo/gamejam-03-2021/Assets/Input.cs",
+		"/usr/share/applications/defaults.list",
+		"/home/ankk4/repo/cops-config/deployConfigs.sh",
+		"/home/ankk4/repo/cops-config/profiles/FullMaintenance.json",
+		"/home/ankk4/repo/cops-config/ansible/site-dev.yml",
+		"/home/ankk4/repo/cops-config/README.md",
+		"/home/ankk4/.config/sublime-text-3/Packages/Guna/themes/Guna.sublime-theme",
+		"/home/ankk4/.config/sublime-text-3/Packages/Guna/themes/preset/Guna-dark.sublime-settings",
+		"/home/ankk4/repo/crypto-stonks/tradingView.js",
+		"/home/ankk4/repo/crypto-stonks/index.js",
+		"/home/ankk4/repo/crypto-stonks/package.json",
+		"/home/ankk4/Downloads/README.md",
+		"/home/ankk4/repo/crypto-stonks/goblin-code.json"
+	],
+	"find":
+	{
+		"height": 106.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 106.0
+	},
+	"input":
+	{
+		"height": 127.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "quarantine-jam.sublime-project",
+	"replace":
+	{
+		"height": 208.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"input",
+				"Assets/Input.cs"
+			],
+			[
+				"gobl",
+				"goblin-code.json"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/private/webm/d20e7baf39780c3ae2855812cab43e0d50af4bba449b029b378a022285ca2aac.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 410.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
