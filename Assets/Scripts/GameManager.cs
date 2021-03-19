@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
     		{0, "Start"},
     		{1, "House"},
     		{2, "Drugs"},
-    		{3, "Run"}
+    		{3, "RunScene"}
     	};
     	debugButton.onClick.AddListener(SwitchScene);
     	CurrentGameState = 0;
