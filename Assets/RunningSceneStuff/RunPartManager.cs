@@ -20,10 +20,10 @@ public class RunPartManager : MonoBehaviour
             _instance = this;
         }
 
-        var initialRunParts = FindObjectsOfType<RunPart>();
-        foreach(RunPart part in initialRunParts) {
-            runParts.Add(part);
-        }
+        //var initialRunParts = FindObjectsOfType<RunPart>();
+        //foreach(RunPart part in initialRunParts) {
+        //    runParts.Add(part);
+        //}
 
     }
 
@@ -31,6 +31,8 @@ public class RunPartManager : MonoBehaviour
         Vector3 newSpawnPos = runParts[runParts.Count-1].transform.position + new Vector3(0,0,50);
         GameObject newPart = Instantiate(runPartPrefab, newSpawnPos, Quaternion.identity);
         runParts.Add(newPart.GetComponent<RunPart>());
+        Destroy(runParts[0].gameObject);
+        runParts.RemoveAt(0);
     }
 
 

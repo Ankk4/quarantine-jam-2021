@@ -8,7 +8,6 @@ public class RunPart : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        print("ontrigger eneter");
         RunPartManager.Instance.SpawnRunPart();
     }
 

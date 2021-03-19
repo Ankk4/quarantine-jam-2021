@@ -7,6 +7,9 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    private static GameManager _instance;
+    public static GameManager Instance { get { return _instance; } }
+
     [SerializeField]
 	public TextMeshProUGUI debugText;
 	[SerializeField]
@@ -25,7 +28,15 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-    	DontDestroyOnLoad(this.gameObject);
+        if(_instance != null && _instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            _instance = this;
+        }
+        DontDestroyOnLoad(this.gameObject);
     }
 
     void Start()
